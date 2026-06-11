@@ -134,6 +134,20 @@ Larger chunks retain more context per retrieval but reduce granularity. Better f
 
 ---
 
+## What I Would Improve
+
+1. **Better CSV processing** – Instead of storing every row separately, I would create supplier-wise summaries. This would help answer calculation-based questions more accurately.
+
+2. **Hybrid search** – Combine semantic search with keyword search to improve results for supplier IDs, product codes, and exact matches.
+
+3. **Metadata filters** – Add tags like supplier, region, and tier to each chunk so the chatbot can find relevant data more precisely.
+
+4. **Stronger LLM** – Use a larger model for handling complex questions that require reasoning across multiple documents.
+
+5. **Result re-ranking** – Add a re-ranking step to send the most relevant chunks to the LLM and improve answer quality.
+
+---
+
 ## Architecture
 
 ```
@@ -172,4 +186,4 @@ scm-assistant-bot/
 
 ---
 
-*Built by Akshat B Gupta | Trinamix Junior AI Engineer Assessment | Ref: TX-JrAI-003*
+*Built by Akshat B Gupta (gakshatb)*
