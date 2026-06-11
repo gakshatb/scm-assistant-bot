@@ -1,0 +1,22 @@
+# Environment variables and API keys - NEVER commit these
+.env
+.env.local
+.env.production
+*.env
+
+# API key files
+api_keys.txt
+secrets.txt
+credentials.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node modules
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+venv/
